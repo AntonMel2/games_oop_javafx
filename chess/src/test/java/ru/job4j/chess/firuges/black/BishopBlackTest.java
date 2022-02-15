@@ -6,7 +6,6 @@ import ru.job4j.chess.firuges.Cell;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-
 public class BishopBlackTest {
 
     @Test
@@ -31,7 +30,7 @@ public class BishopBlackTest {
     }
 
     @Test (expected = ImpossibleMoveException.class)
-    public void WhenNotIsDiagonal() {
+    public void whenNotIsDiagonal() {
         BishopBlack position = new BishopBlack(Cell.C8);
         position.way(Cell.C7);
     }
